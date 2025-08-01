@@ -1,4 +1,4 @@
-module doro
+module github.com/electr1fy0/doro
 
 go 1.24.4
 
