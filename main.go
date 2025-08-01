@@ -16,7 +16,6 @@ var startCmd = &cobra.Command{
 	Use:   "start [duration]",
 	Short: "start a new timer e.g. doro new 30m",
 	Run: func(cmd *cobra.Command, args []string) {
-		// fmt.Println(args[0])
 		startTimer(args[0])
 	},
 	Args: cobra.ExactArgs(1),
@@ -48,5 +47,4 @@ func startTimer(duration string) {
 func main() {
 	cmd.AddCommand(startCmd)
 	cmd.Execute()
-
 }
